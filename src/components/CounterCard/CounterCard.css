@@ -1,0 +1,45 @@
+.counter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: var(--space-card);
+  border-radius: var(--radius-card);
+  color: var(--color-text);
+  min-width: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.counter-card:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+.counter-card__name {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-bg);
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.counter-card__count {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.counter-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}

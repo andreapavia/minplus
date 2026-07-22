@@ -1,0 +1,101 @@
+.edit-entry-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-create-bg);
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.edit-entry-menu__header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  padding: var(--space-page);
+  padding-top: max(var(--space-page), env(safe-area-inset-top));
+  background: var(--color-create-bg);
+  flex-shrink: 0;
+}
+
+.edit-entry-menu__header-btn {
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9375rem;
+}
+
+.edit-entry-menu__header-btn--cancel {
+  justify-self: start;
+  color: var(--color-button-inactive-text);
+}
+
+.edit-entry-menu__header-btn--save {
+  justify-self: end;
+}
+
+.edit-entry-menu__title {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.edit-entry-menu__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-page);
+  padding-bottom: max(var(--space-page), env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.edit-entry-menu__count {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.edit-entry-menu__date-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  min-height: var(--touch-min);
+}
+
+.edit-entry-menu__date-label {
+  flex-shrink: 0;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.edit-entry-menu__date-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text);
+  text-align: right;
+  color-scheme: light;
+}
+
+.edit-entry-menu__date-input:focus {
+  outline: none;
+}
+
+.edit-entry-menu__date-row:focus-within {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}

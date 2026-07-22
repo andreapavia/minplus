@@ -1,0 +1,26 @@
+:root {
+  --color-bg: #f4f5f7;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
+  --color-interactive: #1a1a1a;
+  --color-on-interactive: #ffffff;
+
+  --pastel-orange: #ffb347;
+  --pastel-blue: #7ec8e3;
+  --pastel-purple: #c4a1ff;
+  --pastel-green: #90ee90;
+  --pastel-yellow: #ffe066;
+  --pastel-pink: #ffb3c6;
+  --pastel-red: #ff9a9a;
+
+  --color-create-bg: #eceef1;
+  --color-surface: #ffffff;
+  --color-button-inactive: #e5e7eb;
+  --color-button-inactive-text: #4b5563;
+
+  --radius-card: 18px;
+  --radius-pill: 999px;
+  --touch-min: 44px;
+  --space-page: 1rem;
+  --space-card: 1.25rem;
+}

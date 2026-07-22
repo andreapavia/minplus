@@ -1,0 +1,117 @@
+.all-counters {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.all-counters__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: var(--space-page);
+  padding-top: max(var(--space-page), env(safe-area-inset-top));
+  background: var(--color-bg);
+  flex-shrink: 0;
+}
+
+.all-counters__back {
+  flex-shrink: 0;
+}
+
+.all-counters__title {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  font-size: 1.0625rem;
+  font-weight: 800;
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.all-counters__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 var(--space-page);
+  padding-bottom: max(var(--space-page), env(safe-area-inset-bottom));
+}
+
+.all-counters__status {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.all-counters__list-heading {
+  margin: 0 0 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.all-counters__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.all-counters__toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: var(--radius-card);
+  min-height: var(--touch-min);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  background: var(--color-button-inactive);
+  color: var(--color-button-inactive-text);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.all-counters__toggle--on {
+  background: var(--color-interactive);
+  color: var(--color-on-interactive);
+}
+
+.all-counters__toggle:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+.all-counters__swatch {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.all-counters__toggle-name {
+  flex: 1;
+  min-width: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.all-counters__toggle-state {
+  flex-shrink: 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
